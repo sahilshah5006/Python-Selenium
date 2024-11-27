@@ -1,0 +1,42 @@
+Test Summary: Amazon Product Search and Details Fetcher
+This test script automates searching for products on Amazon India, fetching details (title and price), and navigating to product pages using Selenium WebDriver.
+
+Test Scope:
+
+Functionality tested:
+Search for a product with a user-provided query
+Extract title and price (if available) from search results for the first 3 products
+Navigate to the product page for each of the first 3 products
+Validate successful completion of each step
+Functionality not tested:
+Functionality beyond searching for laptops
+Handling dynamic elements or layout changes on Amazon website
+Robust error handling for all potential exceptions
+Test Results:
+
+Search:
+Pass: Script successfully searched for "laptop" and loaded search results.
+Product Details Extraction:
+Conditional Pass:
+Script successfully extracted title and price for products with available data (individual results may vary).
+Extraction failure cases were logged.
+Navigate to Product Page:
+Conditional Pass:
+Script successfully clicked on the first 3 products and switched to their respective tabs if they opened correctly.
+Tab switching failures were logged.
+Overall Status:
+
+The script demonstrates basic functionality for searching and fetching product details on Amazon. However, it requires further refinement for robustness and wider applicability.
+
+Additional Notes:
+
+The script includes time delays (sleep) for demonstration purposes. These may need adjustment based on network speed and website responsiveness.
+Consider using more specific selectors for element identification to improve script reliability.
+Extensive error handling for various exceptions is recommended for production use.
+Next Steps:
+
+Refine element identification methods to handle potential website layout changes.
+Implement more comprehensive error handling for various exceptions.
+Consider using libraries or techniques for dynamic element handling if needed.
+Test the script with different search queries.
+This summary provides a concise overview of the script's functionality, test results, and areas for improvement.
